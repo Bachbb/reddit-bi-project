@@ -105,7 +105,8 @@ source reddit_bi/database_reddit.sql
 
 ### 3. Kết nối Power BI
 - Get data → MySQL database
-- Host: `localhost` | Database: `reddit_bi`
+- Host: `localhost` | Port: `3306` | Database: `reddit_bi`
+- Username: `root`
 ## 👥 Nhóm thực hiện
 
 Bài tập lớn môn Business Intelligence — Nhóm 12
