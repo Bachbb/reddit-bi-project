@@ -89,32 +89,23 @@ Dashboard bao gồm các visual:
 
 ## ⚙️ Hướng dẫn chạy
 
-### 1. Làm sạch dữ liệu
+### 1. Làm sạch & xử lý dữ liệu
 ```bash
-python reddit_Emotion/clean_reddit_data.py
-```
+# Phân tích cảm xúc
+python reddit_Emotion/reddit_emotion.py
 
-### 2. Trích xuất từ khóa
-```bash
+# Trích xuất từ khóa
 python reddit_keywords/clean_reddit_keywords.py
 ```
 
-### 3. Import vào MySQL
+### 2. Import vào MySQL
 ```sql
--- Chạy file tạo bảng
 source reddit_bi/database_reddit.sql
-
--- Chạy file insert keywords
-source reddit_keywords/insert_keywords.sql
 ```
 
-### 4. Kết nối Power BI
-- Mở Power BI Desktop
+### 3. Kết nối Power BI
 - Get data → MySQL database
-- Nhập host: `localhost`, database: `reddit_bi`
-
----
-
+- Host: `localhost` | Database: `reddit_bi`
 ## 👥 Nhóm thực hiện
 
 Bài tập lớn môn Business Intelligence — Nhóm 12
